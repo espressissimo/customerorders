@@ -1,54 +1,283 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Bestellungen</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-      h1 {
-        text-align: center;
-      }
-      table {
-        border-collapse: collapse;
-        width: 100%;
-        margin-top: 20px;
-      }
-      th, td {
-        border: 1px solid #333;
-        padding: 8px;
-        text-align: left;
-      }
-      th {
-        background-color: #f2f2f2;
-      }
-      tbody tr:nth-child(even) {
-        background-color: #fafafa;
-      }
-      tbody tr:hover {
-        background-color: #e0e0e0;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Bestellungen</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Artikel</th>
-          <th>Kunde</th>
-          <th>Zahlung</th>
-          <th>Bestellnummer</th>
-          <th>Passwort</th>
-          <th>Datum</th>
-          <th>Uhrzeit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Keine Einträge vorhanden -->
-      </tbody>
-    </table>
-  </body>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bestellungen</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: #fff;
+    }
+    .header {
+      background: linear-gradient(90deg, #ADD8E6, #005F99);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .content {
+      padding: 30px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .content table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .content th, .content td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: left;
+    }
+    .content th {
+      background-color: #f2f2f2;
+    }
+    .content tbody tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+    .content tbody tr:hover {
+      background-color: #e0e0e0;
+    }
+    .footer {
+      background: linear-gradient(90deg, #ADD8E6, #005F99);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .footer p {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Bestellungen</h1>
+    </div>
+
+    <!-- Content mit Tabelle -->
+    <div class="content">
+      <table>
+        <thead>
+          <tr>
+            <th>Artikel</th>
+            <th>Kunde</th>
+            <th>Zahlung</th>
+            <th>Bestellnummer</th>
+            <th>Passwort</th>
+            <th>Datum</th>
+            <th>Uhrzeit</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>E11525</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>06:38:27</td>
+            </tr>
+            <tr>
+              <td>E11525</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>06:38:27</td>
+            </tr>
+            <tr>
+              <td>E11525</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>06:38:27</td>
+            </tr>
+            <tr>
+              <td>E11525</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>06:38:27</td>
+            </tr>
+            <tr>
+              <td>E11525</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>06:38:27</td>
+            </tr>
+            <tr>
+              <td>E11525</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>06:38:27</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:35:04</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:35:04</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:35:04</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:35:04</td>
+            </tr>
+            <tr>
+              <td>E56958</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:46:42</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:46:43</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:46:43</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:46:43</td>
+            </tr>
+            <tr>
+              <td>49498</td>
+              <td>Max Mustermann, Tel: 00156165186 Max@Mustermann.de</td>
+              <td>Im Laden</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:48:06</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:48:12</td>
+            </tr>
+            <tr>
+              <td>E669958</td>
+              <td>Maximilian Eber</td>
+              <td>Im Laden</td>
+              <td>559988</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:53:04</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:48:12</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:48:12</td>
+            </tr>
+            <tr>
+              <td>E4949</td>
+              <td>May</td>
+              <td>mo</td>
+              <td>Passwort: Espressissimo*$25</td>
+              <td>Espressissimo*$25</td>
+              <td>2025-06-02</td>
+              <td>07:48:12</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>Herzliche Grüße,</p>
+      <p><strong>Espressissimo!</strong></p>
+      <p>Shopware × Zettle</p>
+    </div>
+  </div>
+</body>
 </html>
